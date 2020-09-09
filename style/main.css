@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+/*******color********/
+/*******Fonts ******/
+.container {
+  padding: 0;
+}
+
+/**************Main Navbar *************/
+.header-section {
+  background-color: #00438b;
+}
+.header-section .nav-link {
+  color: white;
+  font-family: "Comfortaa", sans-serif !important;
+}
+
+/************Banner-Section**************/
+.banner-section {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner-text-box {
+  color: white;
+}
+.banner-text-box h1 {
+  font-size: 3.05rem;
+}
+.banner-text-box p {
+  line-height: 30px;
+  font-size: 1.25rem;
+}
+.banner-text-box .cta-btn a {
+  text-decoration: none;
+  background-color: #f75d25;
+  color: #fff;
+  border-radius: 4px;
+}
+.banner-text-box .cta-btn a :hover {
+  background-color: #fff;
+}
+
+.client-icons {
+  list-style: none;
+}
+.client-icons .client-icon {
+  display: inline;
+}
+.client-icons .client-icon img {
+  width: 90px;
+  margin-right: 20px;
+}
+
+.bottom-img {
+  position: relative;
+  bottom: -50px;
+}
+
+/***************Promo-Section*****************/
+.promo-section {
+  font-family: "Comfortaa", sans-serif;
+}
+.promo-section .section-heading h2 {
+  color: black;
+  font-size: 2.44rem;
+}
+.promo-section .section-heading p {
+  color: #707070;
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+.promo-section .promo-info h5 {
+  color: black;
+}
+.promo-section .promo-info p {
+  color: #707070;
+  line-height: 1.75;
+}
+
+/*# sourceMappingURL=main.css.map */

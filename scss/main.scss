@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+/*******color********/
+$main-bg-color : rgb(0, 67, 139);
+$main-text-color: rgb(255, 255, 255);
+$heading-color : black;
+$text-color: #707070;
+/*******Fonts ******/
+
+.container {
+    padding: 0;
+}
+/**************Main Navbar *************/
+.header-section {
+    background-color: $main-bg-color;
+    .nav-link {
+        color: $main-text-color;
+        font-family: 'Comfortaa', sans-serif !important;
+    }
+}
+
+
+/************Banner-Section**************/
+.banner-section {
+    background-image: url("../images/banner.jpg");   
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner-text-box {
+    color: $main-text-color;
+    h1 {
+        font-size: 3.05rem;
+    }
+    
+    p {
+        line-height: 30px;
+        font-size: 1.25rem;
+    }
+    .cta-btn {
+        a {
+            text-decoration: none;
+            background-color: rgb(247, 93, 37);
+            color: #fff;
+            border-radius: 4px;
+            :hover {
+                background-color: #fff;
+            }
+        }
+    }
+}
+.client-icons {
+    list-style: none;
+    .client-icon {
+        display: inline;
+        img {
+            width: 90px;
+            margin-right: 20px;
+        }
+    }
+}
+
+.bottom-img {
+    position: relative;
+    bottom: -50px;
+}
+
+/***************Promo-Section*****************/
+.promo-section {
+    font-family: 'Comfortaa', sans-serif;
+    .section-heading {
+        h2 {
+            
+            color: $heading-color;
+            font-size: 2.44rem;
+        }
+        p {
+            color: $text-color;
+            font-size: 1.25rem;
+            line-height: 1.75;
+        }
+    }
+    .promo-info {
+
+        h5 {
+            color: $heading-color;
+        }
+        p {
+            color: $text-color;
+            line-height: 1.75;
+        }
+    }
+}
