@@ -1,12 +1,30 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 /*******color********/
-/*******Fonts ******/
+/*******Font-Color ******/
+/********Font-size********/
+* {
+  font-family: "Comfortaa", sans-serif;
+}
+
 .container {
   padding: 0;
 }
 
+/*******CTA_BUTTON*********************/
+.cta-btn a {
+  text-decoration: none;
+  background-color: #f75d25;
+  color: #fff;
+  border-radius: 4px;
+}
+.cta-btn a :hover {
+  background-color: #fff;
+}
+
 /**************Main Navbar *************/
 .header-section {
+  font-family: "Comfortaa", sans-serif;
   background-color: #00438b;
 }
 .header-section .nav-link {
@@ -23,6 +41,7 @@
 }
 
 .banner-text-box {
+  font-family: "Comfortaa", sans-serif;
   color: white;
 }
 .banner-text-box h1 {
@@ -31,15 +50,6 @@
 .banner-text-box p {
   line-height: 30px;
   font-size: 1.25rem;
-}
-.banner-text-box .cta-btn a {
-  text-decoration: none;
-  background-color: #f75d25;
-  color: #fff;
-  border-radius: 4px;
-}
-.banner-text-box .cta-btn a :hover {
-  background-color: #fff;
 }
 
 .client-icons {
@@ -77,6 +87,211 @@
 .promo-section .promo-info p {
   color: #707070;
   line-height: 1.75;
+}
+
+/**********Aboutus-Section**************/
+.aboutus-section {
+  background-color: #f5f5f5;
+}
+
+.aboutus-content-left h2 {
+  color: black;
+}
+.aboutus-content-left p {
+  color: #707070;
+  line-height: 1.75;
+  font-size: 1.2rem;
+}
+.aboutus-content-left .single-features .single-features-content .alarm-clock i {
+  background-color: #00438b;
+  padding: 5px;
+  color: #ffff;
+  border-radius: 5px;
+}
+.aboutus-content-left .single-features .single-features-content h5 {
+  color: black;
+  font-weight: 500;
+}
+.aboutus-content-left .single-features .single-features-content p {
+  font-size: 1rem;
+}
+
+.features-cards .features-card1 {
+  background-color: red;
+}
+
+.single-card {
+  color: black;
+  vertical-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #c6e6fd;
+}
+.single-card span {
+  color: #00438b;
+}
+.single-card p {
+  color: #707070;
+}
+
+/************Our-Promo-Section*************/
+.our-promo-section {
+  background-image: url("../images/hero-bg-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f5f5f5;
+  position: relative;
+}
+.our-promo-section .our-promo-main-container {
+  position: relative;
+  z-index: 10;
+}
+.our-promo-section .our-promo-main-container .our-promo-text h2 {
+  font-size: 2.44rem;
+}
+.our-promo-section .our-promo-main-container .our-promo-text p {
+  font-size: 1.2rem;
+}
+
+.our-promo-section::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 67, 139, 0.85);
+  height: 100%;
+  z-index: 0;
+}
+
+/*************Services-Section**************/
+.services-section .service-main-container {
+  width: 85%;
+  margin: 0 auto;
+}
+.services-section .service-main-container .services-heading-container h2 {
+  font-size: 2.44rem;
+  font-weight: 600;
+}
+.services-section .service-main-container .services-heading-container p {
+  color: #707070;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.services-section .service-main-container .feature-box {
+  display: flex;
+}
+.services-section .service-main-container .feature-box .feature-icon-box .icon {
+  font-size: 35px;
+  color: #00438b;
+  :before-content: "";
+}
+.services-section .service-main-container .features-content-box h5 {
+  color: black;
+  font-weight: 500;
+}
+.services-section .service-main-container .features-content-box p {
+  color: #707070;
+}
+
+/******************Our Pricing-Section**************/
+.pricing-section {
+  background-color: #f5f5f5;
+}
+.pricing-section .container .section-heading-container h2 {
+  color: black;
+  font-size: 2.44rem;
+  font-weight: 500;
+}
+.pricing-section .container .section-heading-container p {
+  color: #707070;
+  line-height: 1.75;
+  font-size: 1.2rem;
+}
+.pricing-section .container .pricing-content-container .card {
+  border-radius: 1rem;
+}
+.pricing-section .container .pricing-content-container .card h5 {
+  color: black;
+  font-weight: 500;
+}
+.pricing-section .container .pricing-content-container .card p {
+  color: #707070;
+}
+.pricing-section .container .pricing-content-container .card .card-header {
+  background: #fff;
+}
+.pricing-section .container .pricing-content-container .card .card-header .price-text {
+  font-size: 35px;
+  color: #00438b;
+  font-weight: 700;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+.pricing-section .container .pricing-content-container .card .card-header .price-text span {
+  font-size: 1.2rem;
+}
+.pricing-section .container .pricing-content-container .card .card-header .price-text :after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  top: 70px;
+  margin-left: -150px;
+  background: radial-gradient(at center center, #dee4ef 0px, rgba(255, 255, 255, 0) 75%);
+}
+.pricing-section .container .pricing-content-container .card .card-body {
+  color: #707070;
+}
+.pricing-section .container .pricing-content-container .card .card-body ul li {
+  font-size: 14px;
+  line-height: 30px;
+}
+.pricing-section .container .pricing-content-container .card .card-body ul li span {
+  color: #5a5a5a;
+  font-weight: 800;
+}
+.pricing-section .container .pricing-content-container .card .card-body .purchase-btn {
+  text-decoration: none;
+  color: #00438b;
+  border: 1px solid #00438b;
+  border-radius: 5px;
+}
+
+/****************Testimonial-Section****************/
+.testimonial-section .container .section-heading-container h2 {
+  color: black;
+  font-weight: 500;
+  font-size: 2.44rem;
+}
+.testimonial-section .container .section-heading-container p {
+  color: #707070;
+  font-size: 1.2rem;
+}
+.testimonial-section .container .testimonial-content .card {
+  position: relative;
+  background-color: #f5f5f5;
+}
+.testimonial-section .container .testimonial-content .card blockquote {
+  color: #707070;
+  font-size: 14px;
+}
+.testimonial-section .container .testimonial-content .card .rating-box {
+  color: #ff743e;
+  font-size: 12px;
+}
+.testimonial-section .container .testimonial-content .card .rating-box h6 {
+  color: #5a5a5a;
+}
+
+.card::after {
+  content: " ";
+  position: absolute;
+  border-top: 30px solid #f7f7f7;
+  border-right: 30px solid transparent;
+  bottom: -30px;
 }
 
 /*# sourceMappingURL=main.css.map */
