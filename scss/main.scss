@@ -423,7 +423,6 @@ $main-font-weight : 500;
         }
         .pricing-content-container {
             .card {
-                border-radius: 1rem;
                 h5 {
                     color: $heading-color;
                     font-weight: 500;
@@ -512,7 +511,7 @@ $main-font-weight : 500;
         }
     }
 }
-.card::after {
+.testimonial-card::after {
     content: " ";
     position: absolute;
     border-top: 30px solid #f7f7f7;

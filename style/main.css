@@ -388,9 +388,6 @@
   line-height: 1.75;
   font-size: 1.25rem;
 }
-.pricing-section .container .pricing-content-container .card {
-  border-radius: 1rem;
-}
 .pricing-section .container .pricing-content-container .card h5 {
   color: black;
   font-weight: 500;
@@ -466,7 +463,7 @@
   color: #5a5a5a;
 }
 
-.card::after {
+.testimonial-card::after {
   content: " ";
   position: absolute;
   border-top: 30px solid #f7f7f7;
