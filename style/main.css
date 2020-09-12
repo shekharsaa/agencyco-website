@@ -1,8 +1,8 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 /*******color********/
 /*******Font-Color ******/
 /********Font-size********/
+/********Font-Weight******/
 * {
   font-family: "Comfortaa", sans-serif;
 }
@@ -25,7 +25,9 @@
 /**************Main Navbar *************/
 .header-section {
   font-family: "Comfortaa", sans-serif;
-  background-color: #00438b;
+}
+.header-section .main-nav {
+  background-color: #000b1f;
 }
 .header-section .nav-link {
   color: white;
@@ -38,6 +40,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 100px;
 }
 
 .banner-text-box {
@@ -45,7 +48,7 @@
   color: white;
 }
 .banner-text-box h1 {
-  font-size: 3.05rem;
+  font-weight: 600;
 }
 .banner-text-box p {
   line-height: 30px;
@@ -67,7 +70,93 @@
   position: relative;
   bottom: -50px;
 }
+.bottom-img .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 
+.animation-1 {
+  position: relative;
+  animation: move-1 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes move-1 {
+  0% {
+    -webkit-transform: translateX(0) translateY(5px);
+    transform: translateX(0) translateY(5px);
+  }
+  50% {
+    -webkit-transform: translateX(0) translateY(-5px);
+    transform: translateX(0) translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(5px);
+    transform: translateX(0) translateY(5px);
+  }
+}
+.animation-2 {
+  position: absolute;
+  width: 120px;
+  bottom: -10px;
+  animation: move-2 8s ease-in-out infinite;
+}
+
+@keyframes move-2 {
+  0% {
+    -webkit-transform: translateX(-25px) translateY(-225px);
+    transform: translateX(-25px) translateY(-225px);
+  }
+  50% {
+    -webkit-transform: translateX(-25px) translateY(-205px);
+    transform: translateX(-25px) translateY(-205px);
+  }
+  100% {
+    -webkit-transform: translateX(-25px) translateY(-225px);
+    transform: translateX(-25px) translateY(-225px);
+  }
+}
+.animation-3 {
+  position: absolute;
+  bottom: -10px;
+  width: 120px;
+  animation: move-3 7s ease-in-out infinite;
+}
+
+@-webkit-keyframes move-3 {
+  0% {
+    -webkit-transform: translateX(45px) translateY(20);
+    transform: translateX(45px) translateY(20px);
+  }
+  50% {
+    -webkit-transform: translateX(45px) translateY(10);
+    transform: translateX(45px) translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateX(-45px) translateY(20);
+    transform: translateX(45px) translateY(20px);
+  }
+}
+.animation-4 {
+  position: absolute;
+  bottom: -10px;
+  right: -70px;
+  animation: move-4 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes move-4 {
+  0% {
+    -webkit-transform: translateX(-45px) translateY(-225px);
+    transform: translateX(45px) translateY(40px);
+  }
+  50% {
+    -webkit-transform: translateX(-45px) translateY(-205px);
+    transform: translateX(45px) translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateX(-45px) translateY(-225px);
+    transform: translateX(45px) translateY(40px);
+  }
+}
 /***************Promo-Section*****************/
 .promo-section {
   font-family: "Comfortaa", sans-serif;
@@ -89,6 +178,18 @@
   line-height: 1.75;
 }
 
+.single-promo {
+  border-radius: 7px;
+  transition: all 0.2s ease-out;
+  will-change: transform;
+}
+
+.single-promo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+}
+
 /**********Aboutus-Section**************/
 .aboutus-section {
   background-color: #f5f5f5;
@@ -100,12 +201,13 @@
 .aboutus-content-left p {
   color: #707070;
   line-height: 1.75;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 .aboutus-content-left .single-features .single-features-content .alarm-clock i {
   background-color: #00438b;
-  padding: 5px;
+  padding: 10px;
   color: #ffff;
+  font-size: 20px;
   border-radius: 5px;
 }
 .aboutus-content-left .single-features .single-features-content h5 {
@@ -122,18 +224,97 @@
 
 .single-card {
   color: black;
+  padding: 35px 15px;
   vertical-align: center;
   justify-content: center;
   border-radius: 10px;
   background-color: #c6e6fd;
+}
+.single-card h3 {
+  font-weight: 800;
+  font-size: 34px;
 }
 .single-card span {
   color: #00438b;
 }
 .single-card p {
   color: #707070;
+  font-size: 14px;
 }
 
+.card-1 {
+  background-color: #ff7700;
+  color: #fff;
+  margin-bottom: 50px;
+  position: relative;
+  bottom: 0px;
+  animation: animation-1 5s ease-out infinite;
+}
+.card-1 p {
+  color: white;
+}
+
+@keyframes animation-1 {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+.card-2 {
+  background-color: #c6e6fd;
+  color: #63B0E3;
+  animation: animation-2 5s ease-out infinite;
+}
+.card-2 span {
+  color: #63B0E3;
+}
+.card-2 p {
+  color: #63B0E3;
+}
+
+@keyframes animation-2 {
+  50% {
+    transform: translate(0, 35px);
+  }
+}
+.card-3 {
+  background-color: #efdff7;
+  color: #b17cc6;
+  margin-top: 50px;
+  position: relative;
+  top: -40px;
+  animation: animation-3 5s ease-out infinite;
+}
+.card-3 span {
+  color: #b17cc6;
+}
+.card-3 p {
+  color: #b17cc6;
+}
+
+@keyframes animation-3 {
+  50% {
+    transform: translate(0, 60px);
+  }
+}
+.card-4 {
+  background-color: #00438b;
+  color: #ffff;
+  position: relative;
+  top: 40px;
+  animation: animation-4 5s ease-out infinite;
+}
+.card-4 span {
+  color: #ff7700;
+}
+.card-4 p {
+  color: white;
+}
+
+@keyframes animation-4 {
+  50% {
+    transform: translate(0, 30px);
+  }
+}
 /************Our-Promo-Section*************/
 .our-promo-section {
   background-image: url("../images/hero-bg-4.jpg");
@@ -151,7 +332,7 @@
   font-size: 2.44rem;
 }
 .our-promo-section .our-promo-main-container .our-promo-text p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .our-promo-section::before {
@@ -175,7 +356,7 @@
 }
 .services-section .service-main-container .services-heading-container p {
   color: #707070;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 1.8;
 }
 .services-section .service-main-container .feature-box {
@@ -184,7 +365,6 @@
 .services-section .service-main-container .feature-box .feature-icon-box .icon {
   font-size: 35px;
   color: #00438b;
-  :before-content: "";
 }
 .services-section .service-main-container .features-content-box h5 {
   color: black;
@@ -206,7 +386,7 @@
 .pricing-section .container .section-heading-container p {
   color: #707070;
   line-height: 1.75;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 .pricing-section .container .pricing-content-container .card {
   border-radius: 1rem;
@@ -229,7 +409,7 @@
   font-family: "Montserrat", sans-serif;
 }
 .pricing-section .container .pricing-content-container .card .card-header .price-text span {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 .pricing-section .container .pricing-content-container .card .card-header .price-text :after {
   content: " ";
@@ -268,7 +448,7 @@
 }
 .testimonial-section .container .section-heading-container p {
   color: #707070;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 .testimonial-section .container .testimonial-content .card {
   position: relative;
@@ -292,6 +472,180 @@
   border-top: 30px solid #f7f7f7;
   border-right: 30px solid transparent;
   bottom: -30px;
+}
+
+.crousel-btn button {
+  border: 0;
+  background-color: #fff;
+  outline: none;
+}
+.crousel-btn button span {
+  background-color: #ffff;
+  font-size: 12px;
+  border: 1px solid #707070;
+  border-radius: 2px;
+  align-items: center;
+  padding: 5px 8px;
+  color: #ff743e;
+}
+.crousel-btn button :hover {
+  background-color: #ff743e;
+  font-size: 12px;
+  border: 1px solid;
+  outline: none;
+  border-radius: 5px;
+  align-items: center;
+  padding: 5px 8px;
+  color: #fff;
+}
+
+/***************Contact-Us-Form***************/
+.contactus-section {
+  background-color: #f5f5f5;
+}
+.contactus-section .contact-us-form-box {
+  background-color: #fff;
+  border: 0;
+}
+.contactus-section .contact-us-form-box h4 {
+  font-weight: 600;
+  color: black;
+  margin-bottom: 15px;
+}
+.contactus-section .contact-us-form-box form textarea:focus,
+.contactus-section .contact-us-form-box form textarea.form-control:focus,
+.contactus-section .contact-us-form-box form input.form-control:focus,
+.contactus-section .contact-us-form-box form input[type=text]:focus,
+.contactus-section .contact-us-form-box form input[type=password]:focus,
+.contactus-section .contact-us-form-box form input[type=email]:focus,
+.contactus-section .contact-us-form-box form input[type=number]:focus,
+.contactus-section .contact-us-form-box form [type=text].form-control:focus,
+.contactus-section .contact-us-form-box form [type=password].form-control:focus,
+.contactus-section .contact-us-form-box form [type=email].form-control:focus,
+.contactus-section .contact-us-form-box form [type=tel].form-control:focus,
+.contactus-section .contact-us-form-box form [contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+.contactus-section .contact-us-form-box form .form-check-label {
+  font-size: 0.8rem;
+}
+.contactus-section .contact-us-form-box form .submit-btn {
+  background-color: #00438b;
+  border: 1px solid transparent;
+  padding: 0.75rem 1.85rem;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.65;
+  border-radius: 0.25rem;
+}
+.contactus-section .contact-us-text-box {
+  padding: 10px 30px;
+}
+.contactus-section .contact-us-text-box h2 {
+  font-size: 2.44rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: black;
+}
+.contactus-section .contact-us-text-box p {
+  color: #707070;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.contactus-section .contact-us-text-box h5 {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.contactus-section .contact-us-text-box address {
+  color: #707070;
+}
+.contactus-section .contact-us-text-box span {
+  color: #707070;
+}
+.contactus-section .contact-us-text-box span .email {
+  color: #00438b;
+}
+
+/*******************CTA-Section****************/
+.cta-section {
+  position: relative;
+  background: url("../images/bg-3.jpg") no-repeat center center/cover fixed;
+  width: 100%;
+  padding: 100px 0;
+  color: white;
+}
+.cta-section .cta-content {
+  text-align: left;
+}
+.cta-section .cta-content h2 {
+  font-size: 2.44rem;
+  font-weight: 500;
+}
+.cta-section .cta-content p {
+  font-size: 0.9rem;
+}
+.cta-section .cta-btn a {
+  padding: 0.75rem 1.85rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cta-section:before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 67, 139, 0.85);
+}
+
+/**************Footer-Section****************/
+.footer-section {
+  padding: 65px 0;
+  font-size: 14px;
+}
+.footer-section h4 {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+.footer-section .footer-links ul li {
+  padding: 5px 0;
+}
+.footer-section .footer-links ul li a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 14px;
+  opacity: 0.7;
+}
+.footer-section .footer-links ul :hover {
+  color: black;
+}
+.footer-section .contact-details-box ul li {
+  color: #707070;
+}
+
+/**************Copyright-Section*************/
+.copyright-section {
+  background-color: #f5f5f5;
+  font-size: 13px;
+  color: #707070;
+}
+.copyright-section .copyright-content span a {
+  text-decoration: none;
+  color: #00438b;
+}
+.copyright-section .copyright-content span :hover {
+  color: #f75d25;
+}
+.copyright-section .social-links ul li a {
+  text-decoration: none;
+  color: #00438b;
+}
+.copyright-section .social-links ul li :hover {
+  color: #f75d25;
 }
 
 /*# sourceMappingURL=main.css.map */
