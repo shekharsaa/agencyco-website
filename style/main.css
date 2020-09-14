@@ -27,7 +27,7 @@
   font-family: "Comfortaa", sans-serif;
 }
 .header-section .main-nav {
-  background-color: #000b1f;
+  background-color: rgba(0, 12, 36, 0.95);
 }
 .header-section .nav-link {
   color: white;
@@ -436,6 +436,26 @@
   border: 1px solid #00438b;
   border-radius: 5px;
 }
+.pricing-section .container .pricing-content-container .card :hover {
+  transition: all 0.2s ease-out;
+}
+
+.pricing-card {
+  border-radius: 1rem !important;
+  border: 2px solid transparent;
+  transition: all 0.2s ease 0s;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+  transform: translate(0, -5px);
+  border-top: 2px solid #00438b;
+}
+
+.popular-price {
+  box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+  border: 2px solid #00438b !important;
+}
 
 /****************Testimonial-Section****************/
 .testimonial-section .container .section-heading-container h2 {
@@ -456,7 +476,7 @@
   font-size: 14px;
 }
 .testimonial-section .container .testimonial-content .card .rating-box {
-  color: #ff743e;
+  color: #f75d25;
   font-size: 12px;
 }
 .testimonial-section .container .testimonial-content .card .rating-box h6 {
@@ -479,20 +499,21 @@
 .crousel-btn button span {
   background-color: #ffff;
   font-size: 12px;
-  border: 1px solid #707070;
+  border: 1px dashed #ebebeb;
   border-radius: 2px;
   align-items: center;
-  padding: 5px 8px;
-  color: #ff743e;
+  padding: 10px 8px;
+  color: #f75d25;
 }
 .crousel-btn button :hover {
-  background-color: #ff743e;
+  background-color: #f75d25;
+  border-color: #f75d25;
   font-size: 12px;
   border: 1px solid;
   outline: none;
   border-radius: 5px;
   align-items: center;
-  padding: 5px 8px;
+  padding: 10px 8px;
   color: #fff;
 }
 

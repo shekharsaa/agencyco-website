@@ -3,6 +3,7 @@
 /*******color********/
 $main-bg-color : rgb(0, 67, 139);
 $primary-bg-color : #f5f5f5;
+$orange-color : rgb(247, 93, 37);
 /*******Font-Color ******/
 $main-text-color: rgb(255, 255, 255);
 $heading-color : black;
@@ -10,8 +11,10 @@ $text-color: #707070;
 /********Font-size********/
 $heading-text : 2.44rem;
 $sub-text : 1.25rem;
+$small-14px : 14px;
 /********Font-Weight******/
 $main-font-weight : 500;
+
 * {
     font-family: 'Comfortaa', sans-serif;
 }
@@ -23,7 +26,7 @@ $main-font-weight : 500;
 .cta-btn {
     a {
         text-decoration: none;
-        background-color: rgb(247, 93, 37);
+        background-color: $orange-color;
         color: #fff;
         border-radius: 4px;
         :hover {
@@ -35,7 +38,7 @@ $main-font-weight : 500;
 .header-section {
     font-family: 'Comfortaa', sans-serif;
     .main-nav {
-        background-color: #000b1f;
+        background-color: rgb(0, 12, 36,0.95);
     }
     .nav-link {
         color: $main-text-color;
@@ -174,11 +177,11 @@ $main-font-weight : 500;
         h2 {
             
             color: $heading-color;
-            font-size: 2.44rem;
+            font-size: $heading-text;
         }
         p {
             color: $text-color;
-            font-size: 1.25rem;
+            font-size: $sub-text;
             line-height: 1.75;
         }
     }
@@ -369,6 +372,7 @@ $main-font-weight : 500;
     height: 100%;
     z-index: 0;
 }
+
 /*************Services-Section**************/ 
 .services-section {
     .service-main-container {
@@ -459,7 +463,7 @@ $main-font-weight : 500;
                     ul {
 
                         li {
-                            font-size: 14px;
+                            font-size: $small-14px;
                             line-height: 30px;
                             span {
                                 color: #5a5a5a;
@@ -474,9 +478,26 @@ $main-font-weight : 500;
                         border-radius: 5px;
                     } 
                 }
+                :hover {
+                    transition: all .2s ease-out;
+                }
             }
         }
     }
+}
+.pricing-card {
+    border-radius: 1rem !important; 
+    border: 2px solid transparent;
+    transition: all 0.2s ease 0s;
+}
+.pricing-card:hover {
+    box-shadow: 0 1rem 3rem rgba(31, 45, 61, .125) !important;
+    transform: translate(0, -5px);
+    border-top: 2px solid #00438b;
+}
+.popular-price {
+    box-shadow: 0 1rem 3rem rgb(31, 45, 61, 0.125) !important;
+    border: 2px solid $main-bg-color !important;
 }
 /****************Testimonial-Section****************/ 
 .testimonial-section {
@@ -498,10 +519,10 @@ $main-font-weight : 500;
                 background-color: $primary-bg-color;
                 blockquote {
                     color: $text-color;
-                    font-size: 14px;
+                    font-size: $small-14px;
                 }
                 .rating-box {
-                    color: #ff743e;
+                    color: $orange-color;
                     font-size: 12px;
                     h6 {
                         color: #5a5a5a;
@@ -527,20 +548,21 @@ $main-font-weight : 500;
         span {
         background-color: #ffff;
         font-size: 12px;
-        border: 1px solid #707070 ;
+        border: 1px dashed #ebebeb;
         border-radius: 2px;
         align-items: center;
-        padding: 5px 8px;
-        color: #ff743e;
+        padding: 10px 8px;
+        color: $orange-color;
         }
         :hover {
-            background-color: #ff743e;
+            background-color: $orange-color;
+            border-color: $orange-color;
             font-size: 12px;
             border: 1px solid ;
             outline: none;
             border-radius: 5px;
             align-items: center;
-            padding: 5px 8px;
+            padding: 10px 8px;
             color: #fff;
         }
     }
@@ -579,7 +601,7 @@ $main-font-weight : 500;
                 border: 1px solid transparent;
                 padding: .75rem 1.85rem;
                 color: #fff;
-                font-size: 14px;
+                font-size: $small-14px;
                 opacity: 0.65;
                 border-radius: .25rem;
             }
@@ -618,10 +640,6 @@ $main-font-weight : 500;
 .cta-section {
     position: relative;
     background: url("../images/bg-3.jpg") no-repeat center center / cover  fixed;
-    // background-image: url("../images/bg-3.jpg");
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
     width: 100%;
     padding: 100px 0;
     color: $main-text-color;
@@ -639,7 +657,7 @@ $main-font-weight : 500;
     .cta-btn {
         a {
             padding: .75rem 1.85rem;
-            font-size: 14px;
+            font-size: $small-14px;
             font-weight: $main-font-weight;
         }
     }
@@ -657,7 +675,7 @@ $main-font-weight : 500;
 /**************Footer-Section****************/ 
 .footer-section {
     padding: 65px 0;
-    font-size: 14px;
+    font-size: $small-14px;
     h4 {
         color: $heading-color;
         font-weight: $main-font-weight;
@@ -670,7 +688,7 @@ $main-font-weight : 500;
                 a {
                     text-decoration: none;
                     color: $text-color;
-                    font-size: 14px;
+                    font-size: $small-14px;
                     opacity: 0.7;
                 }
             }
@@ -702,7 +720,7 @@ $main-font-weight : 500;
                 color: $main-bg-color;
             }
             :hover {
-                color: rgb(247, 93, 37);
+                color: $orange-color;
             }
         }
     }
@@ -714,7 +732,7 @@ $main-font-weight : 500;
                     color: $main-bg-color;
                 }
                 :hover {
-                    color: rgb(247, 93, 37);
+                    color: $orange-color;
                 }
             }
         }
